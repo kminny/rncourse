@@ -22,7 +22,7 @@ const placeDetail = props => {
     >
       <View style={styles.modalContainer}>
         {modalContent}
-        <View>
+        <View style={styles.buttonStyle}>
           <Button title="Delete" color="red" onPress={props.onItemDeleted} />
           <Button title="Close" onPress={props.onModalClosed} />
         </View>
@@ -43,6 +43,10 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     textAlign: "center",
     fontSize: 28
+  },
+  buttonStyle: {
+    height: 100,
+    justifyContent: "space-evenly"
   }
 });
 export default placeDetail;
