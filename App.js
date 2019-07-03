@@ -4,6 +4,7 @@ import { Provider } from "react-redux";
 import AuthScreen from "./src/screens/Auth/Auth";
 import SharePlaceScreen from "./src/screens/SharePlace/SharePlace";
 import FindPlaceScreen from "./src/screens/FindPlace/FindPlace";
+import PlaceDetailScreen from "./src/screens/PlaceDetail/PlaceDetail";
 
 import configureStore from "./src/store/configureStore";
 
@@ -26,6 +27,12 @@ Navigation.registerComponent(
 Navigation.registerComponent(
   "awesome-places.FindPlaceScreen",
   () => FindPlaceScreen,
+  store,
+  Provider
+);
+Navigation.registerComponent(
+  "awesome-places.PlaceDetailScreen",
+  () => PlaceDetailScreen,
   store,
   Provider
 );
