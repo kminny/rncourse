@@ -3,3 +3,4 @@
 // 나중에 action 이 많아지면 많이 유용하다.
 
 export { addPlace, deletePlace } from "./places";
+export { tryAuth } from "./auth";
