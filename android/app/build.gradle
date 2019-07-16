@@ -143,7 +143,7 @@ dependencies {
     implementation "com.android.support:appcompat-v7:${rootProject.ext.supportLibVersion}"
     implementation 'com.android.support:design:27.1.0' 
     implementation "com.facebook.react:react-native:+" // From node_modules
-    implementation project(':react-native-vector-icons')
+    implementation project(':react-native-vector-icons');
 	implementation project(':react-native-navigation')
     implementation(project(':react-native-maps')){
        exclude group: 'com.google.android.gms', module: 'play-services-base'

@@ -20,7 +20,8 @@ const reducer = (state = initialState, action) => {
           image: {
             uri:
               "https://www.treebo.com/blog/wp-content/uploads/2017/04/Places-to-Visit-in-Jaipur.jpg"
-          }
+          },
+          location: action.location
         })
       };
     case DELETE_PLACE:
